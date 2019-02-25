@@ -1,12 +1,15 @@
 # Virtual Programming contest solution
 
 ## Codeforces
+* 2018 ICPC Asia Jakarta Regional Contest
 * 2018-2019 ACM-ICPC, Asia Jiaozuo Regional Contest  
 * 2018-2019 ACM-ICPC, NEERC, Southern Subregional Contest, Qualification Stage  
 * Codeforces Round #498 (Div. 3)  
-* Codeforces Round #527 (Div. 3)  
+* Codeforces Round #527 (Div. 3) 
+* Codeforces Round #540 (Div. 3)
 * Educational Codeforces Round 57 (Div 2)  
 * School Regional Team Contest 2011  
+* School Team Contest #3 (Winter Computer School 201011)
 
 ## LeetCode
 
