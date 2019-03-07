@@ -3,7 +3,8 @@
 ## Codeforces
 * 2018 ICPC Asia Jakarta Regional Contest
 * 2018-2019 ACM-ICPC, Asia Jiaozuo Regional Contest  
-* 2018-2019 ACM-ICPC, NEERC, Southern Subregional Contest, Qualification Stage  
+* 2018-2019 ACM-ICPC, NEERC, Southern Subregional Contest, Qualification Stage 
+* ABBYY Cup 2.0 - Easy
 * Codeforces Round #498 (Div. 3)  
 * Codeforces Round #527 (Div. 3) 
 * Codeforces Round #540 (Div. 3)
