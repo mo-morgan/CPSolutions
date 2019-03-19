@@ -22,6 +22,33 @@ inline void IOS() {
 int main()
 {
 	IOS();
-
+	int n, m;
+	cin >> n >> m;
+	int k = m%n;
+	if (k != 0) {
+	    cout << -1 << endl;
+	    return 0;
+	}
+	
+	k = m / n;
+	
+	int ret = 0;
+	while(1) {
+	    if (k <= 1) {
+	        cout << ret << endl;
+	        return 0;
+	    }
+	    if (k % 2 == 0) {
+	        k/=2;
+	        ret++;
+	    } else if (k%3==0) {
+	        k/=3;
+	        ret++;
+	    } else {
+	        cout << -1 << endl;
+	        return 0;
+	    }
+	}
+	cout << ret << endl;
     return 0;
 }

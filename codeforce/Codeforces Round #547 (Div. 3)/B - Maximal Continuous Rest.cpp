@@ -22,6 +22,37 @@ inline void IOS() {
 int main()
 {
 	IOS();
+	int n;
+	cin >> n;
+	int max = 0;
+	int cur = 0;
+	vector<int> hours(3*n);
+	for (int i = n; i < 2*n; i++) {
+	    cin >> hours[i];
+	}
+	for (int i = 0; i < n; i++) {
+	    hours[i] = hours[i+n];
+	}
+	
+	for (int i = 2*n; i < 3*n; i++) {
+	    hours[i] = hours[i-n];
+	}
+	
+	for (int i = 0; i < 3*n; i++) {
+	    if (hours[i]==1) {
+	        cur++;
+	    } else {
+	        if (max < cur) {
+	            max = cur;
+	        }
+	        cur = 0;
+	        continue;
+	    }
+	}
+	if (max < cur) {
+	    max = cur;
+	}
 
+    cout << max << endl;
     return 0;
 }
