@@ -1,8 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define EPS 				0.00000001
-#define MAX 				1e18
-#define MIN					-1e18
+#define LL_MAX 				1e18
+#define LL_MIN				-1e18
+#define MAX					0x3f3f3f3f
+#define MIN					-0x3f3f3f3f
 #define MOD					1000000007
 #define DEBUG(x) 			cout << '>' << #x << ':' << x << endl;
 #define REP(i,n) 			for(int i=0;i<(n);i++)
@@ -11,9 +13,11 @@ using namespace std;
 #define n1 					'\n'
 
 typedef long long ll;
+typedef long double ld;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
-typedef complex<double> pt;
+typedef complex<ld> pt;
+typedef vector<pt> pol;
 
 ll power(ll b, int e) {
 	ll res = 1;
