@@ -27,6 +27,7 @@
 * ReCode 4.0  
 * HourRank 31  
 
-## AtCoder
+## Misc
+* Google Code Jam 2019
 
 <i>Contests hosted by UBC ACM club</i>
