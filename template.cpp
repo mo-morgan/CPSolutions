@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define desync				ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
 #define EPS 				0.00000001
-#define LL_MAX 				1e18
-#define LL_MIN				-1e18
+#define LL_MAX 				0x3f3f3f3f3f3f3f3f
+#define LL_MIN				-0x3f3f3f3f3f3f3f3f
 #define MAX					0x3f3f3f3f
 #define MIN					-0x3f3f3f3f
 #define MOD					1000000007
@@ -28,14 +29,9 @@ ll power(ll b, int e) {
 	return res;
 }
 
-inline void IOS() {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
-}
-
 int main()
 {
-	IOS();
+	desync
 
     return 0;
 }
