@@ -39,4 +39,4 @@
 ## Misc
 * Google Code Jam 2019
 
-<i>Contests hosted by UBC ACM club</i>
+<i>Contests hosted by UBC ICPC Competitive Programming club</i>
