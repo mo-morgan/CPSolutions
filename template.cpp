@@ -12,6 +12,7 @@ using namespace std;
 #define FOR(i,a,b) 			for(int i=(a);i<=(b);i++)
 #define FORD(i,a,b) 		for(int i=(a);i>=(b);i--)
 #define n1 					'\n'
+#define PRINT(n)			cout << (n) << n1;
 
 typedef long long ll;
 typedef long double ld;
