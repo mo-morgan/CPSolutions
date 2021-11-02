@@ -21,9 +21,43 @@ typedef pair<ll, ll> pll;
 typedef complex<ld> pt;
 typedef vector<pt> pol;
 
+ll lookup[100];
+
+ll Hamm(string s, string ans) {
+    ll dist = 0;
+    ll n = s.length();
+    ll m = ans.length();
+    ll i = 0, j = 0;
+    while(i < n && j < m) {
+        if (s[i] != ans[j]) {
+            dist++;
+            i++;
+        } else {
+            i++; j++;
+        }
+    }
+    dist += m - j + (n - i);
+    return dist;
+}
+
 int main()
 {
 	desync
+    for (int i = 0; i < 100; i++) {
+        lookup[i] = pow(2, i);
+    }
+    int t;
+    cin >> t;
+    REP(i, t) {
+        string n;
+        cin >> n;
+        ll dist = MAX;
+        for (int i = 0; i < 100; i++) {
+            ll k = Hamm(n, to_string(lookup[i]));
+            dist = (k < dist ? k : dist);
+        }
 
+        cout << dist << nl;
+    }
     return 0;
 }

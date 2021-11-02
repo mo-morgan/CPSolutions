@@ -21,9 +21,28 @@ typedef pair<ll, ll> pll;
 typedef complex<ld> pt;
 typedef vector<pt> pol;
 
+int ks[1010];
+
 int main()
 {
 	desync
+    int t;
+    cin >> t;
+    for (int i = 0; i < t; i++) {
+        cin >> ks[i];
+    }
+    vector<int> polyn;
+    polyn.push_back(1);
 
+    for (int i = 1; i < 2000; i++) {
+        if (i % 3 == 0 || to_string(i).back() == '3') {
+            continue;
+        }
+        polyn.push_back(i);
+    }
+    for (int i = 0; i < t; i++) {
+        cout << polyn[ks[i]] << nl;
+    }
+    
     return 0;
 }

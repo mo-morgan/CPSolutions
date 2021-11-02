@@ -21,9 +21,38 @@ typedef pair<ll, ll> pll;
 typedef complex<ld> pt;
 typedef vector<pt> pol;
 
+ll perf[100010];
+
 int main()
 {
 	desync
+    // create perfect squares
+    for (int i = 0; i < 100000; i++) {
+        perf[i] = i*i;
+    }
+    int t;
+    cin >> t;
+    REP(i, t) {
+        ll a;
+        cin >> a;
+        int ind = 0;
+        for (int i = 0; i < 100000; i++) {
+            if (a <= perf[i]) {
+                ind = i - 1;
+                break;
+            }
+        }
+        int lenStrip = perf[ind+1] - perf[ind];
+        int dist = a - perf[ind];
+        int middle = ind + 1;
+        if (dist > middle) {
+            // bottom left
+            cout << ind + 1 << " " << middle - ((dist - middle))  << nl;
+        } else {
+            // top right
+            cout << dist << " " << ind + 1 << nl;
+        }
+    }
 
     return 0;
 }

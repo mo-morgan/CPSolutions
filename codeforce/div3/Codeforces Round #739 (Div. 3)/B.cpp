@@ -21,9 +21,30 @@ typedef pair<ll, ll> pll;
 typedef complex<ld> pt;
 typedef vector<pt> pol;
 
+int a[10010], b[10010], c[10010];
+
 int main()
 {
 	desync
+    int t;
+    cin >> t;
+    for (int i = 0; i < t; i++) {
+        cin >> a[i] >> b[i] >> c[i];
+    }
+
+    for (int i = 0; i < t; i++) {
+        int as = a[i], bs = b[i], cs = c[i];
+        if (as > bs) swap(as, bs);
+        int k = bs - as;
+        if (bs > 2*k || cs > 2*k) {
+            cout << -1 << nl;
+        }
+        else if (cs > k) {
+            cout << cs - k << nl;
+        } else {
+            cout << cs + k << nl;
+        }
+    }
 
     return 0;
 }
