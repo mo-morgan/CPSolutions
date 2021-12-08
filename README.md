@@ -38,5 +38,6 @@
 
 ## Misc
 * Google Code Jam 2019
+* Advent of Code 2021
 
 <i>Contests hosted by UBC ICPC Competitive Programming club</i>
