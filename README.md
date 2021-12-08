@@ -18,6 +18,7 @@
 * School Personal Contest #1 (Winter Computer School 2010/11)
 * School Team Contest #3 (Winter Computer School 201011)
 * Wunder Fund Round 2016
+* Too lazy to keep counting cf rounds
 
 ## LeetCode
 
